@@ -10,31 +10,38 @@
         <i class="c-sidebar-nav-icon cil-user"></i> طلب تحويل
     </a>
 </li>
+
 <li class="c-sidebar-nav-item mt-1">
     <a class="c-sidebar-nav-link c-active" href="#">
         <i class="c-sidebar-nav-icon cil-user"></i> سجل المعاملات اليومية
     </a>
 </li>
+
 <li class="c-sidebar-nav-item mt-1">
     <a class="c-sidebar-nav-link c-active" href="#">
         <i class="c-sidebar-nav-icon cil-user"></i> سجل الأمانات 
     </a>
 </li>
+
 <li class="c-sidebar-nav-item mt-1">
-    <a class="c-sidebar-nav-link c-active" href="#">
-        <i class="c-sidebar-nav-icon cil-user"></i>  <div class="btn-group ">
+    <div class="c-sidebar-nav-link c-active">
+        <i class="c-sidebar-nav-icon cil-user"></i>
+        <div class="btn-group ">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               إدارة النظام
             </button>
             <div class="dropdown-menu dropdown-menu-right">
               <button class="dropdown-item" type="button">الفروع</button>
               <button class="dropdown-item" type="button">إدارة المستخدمين</button>
+              <a class="dropdown-item" type="button" href="{{ url('locations') }}">إدارة المناطق</a>
             </div>
           </div> 
-    </a>
+        </div>
+  
 </li>
+
 <li class="c-sidebar-nav-item mt-1">
-    <a class="c-sidebar-nav-link c-active" href="#">
+    <div class="c-sidebar-nav-link c-active" href="#">
         <i class="c-sidebar-nav-icon cil-user"></i>  <div class="btn-group ">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               تقارير
@@ -44,7 +51,7 @@
               <button class="dropdown-item" type="button">تقرير كامل    </button>
             </div>
           </div> 
-    </a>
+        </div>
 </li>
 
 

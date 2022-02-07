@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,15 +22,17 @@ Route::group(
         'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
     ], function(){ 
         
-        // Auth::routes();
-        Auth::routes(['register' => false]);
+        Auth::routes();
+        // Auth::routes(['register' => false]);
 
         Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware("auth");
+        Route::delete('locations/{id}','App\Http\Controllers\LocationController@destroy')->name('location.destroy');
+
+        Route::resource('/locations', 'App\Http\Controllers\LocationController')->middleware("auth");
+
+        // Route::get('/locations', [App\Http\Controllers\LocationController::class, 'index']);
 
     });
 
 
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
