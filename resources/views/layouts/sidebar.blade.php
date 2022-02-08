@@ -1,6 +1,6 @@
 <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
     <div class="c-sidebar-brand d-md-down-none">
-        <img src="./images/vendor/athrib.jpeg" width="46"
+        <img src="/images/vendor/athrib.jpeg" width="46"
              class="c-sidebar-brand-full" alt="Brand Logo">
         
     </div>

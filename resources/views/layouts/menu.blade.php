@@ -6,7 +6,7 @@
 
 
 <li class="c-sidebar-nav-item mt-1">
-    <a class="c-sidebar-nav-link c-active" href="#">
+    <a class="c-sidebar-nav-link c-active" href="/transaction">
         <i class="c-sidebar-nav-icon cil-user"></i> طلب تحويل
     </a>
 </li>

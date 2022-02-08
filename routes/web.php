@@ -29,6 +29,7 @@ Route::group(
         Route::delete('locations/{id}','App\Http\Controllers\LocationController@destroy')->name('location.destroy');
 
         Route::resource('/locations', 'App\Http\Controllers\LocationController')->middleware("auth");
+        Route::resource('/transaction', 'App\Http\Controllers\TransactionController')->middleware("auth");
 
         // Route::get('/locations', [App\Http\Controllers\LocationController::class, 'index']);
 

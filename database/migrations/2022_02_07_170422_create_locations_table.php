@@ -14,7 +14,7 @@ class CreateLocationsTable extends Migration
     public function up()
     {
         Schema::create('locations', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger();
             $table->string('area')->unique();
             $table->timestamps();
         });
